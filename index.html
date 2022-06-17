@@ -11,17 +11,17 @@
 
 <!-- Header and navigation elements -->
     <header class="header-content">
-        <h1 class="name">Tammi L. Coles</h1>
-        <h3 class="subtitle">Web developer</h3>
-        <div role="img"></div>
         <nav>
+            <h1 class="name">Tammi L. Coles</h1>
             <ul class="nav-links">
-                <li>About</li>
-                <li>Work</li>
-                <li>Contact</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        
         </nav>
+        <h3 class="subtitle">Web developer</h3>
+        <!-- <div role="img"></div> -->
+
 
     </header>
 
@@ -30,14 +30,15 @@
 
         <!-- About-me section -->
         <section class="about">
-            <h2 class="section-header">About</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sint necessitatibus sequi illum. Eum fuga quidem perferendis impedit aliquid architecto tempora, ad, maxime quia illo nam laboriosam autem nemo fugit?</p>
+            <h2 class="section-header" id="about">About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sint necessitatibus sequi illum. Eum fuga quidem perferendis <a href="https://google.com">testing a link here</a>
+                impedit aliquid architecto tempora, ad, maxime quia illo nam laboriosam autem nemo fugit?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ratione, hic quos ipsa vero natus omnis voluptatibus est provident eos asperiores quas totam alias nostrum fugiat perferendis. Voluptate, velit atque!
             </p>
         </section>
 
         <!-- Work-portfolio section -->
-        <section class="work">
+        <section class="work" id="portfolio">
             <h2 class="section-header">Work portfolio</h2>
 
             <!-- Portfolio items with image backgrounds per W3Schools -->
@@ -69,7 +70,7 @@
 
         <!-- Contact section -->
         <section class="contact">
-            <h2 class="section-header">Contact</h2>
+            <h2 class="section-header" id="contact">Contact</h2>
             <ul class="contact-links">
                 <li>Phone</li>
                 <li>Email</li>
