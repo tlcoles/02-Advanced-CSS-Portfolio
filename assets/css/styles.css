@@ -1,37 +1,76 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    background-color: #f1f4f5;
+    border: #b50e0e;
+    border-width: 1px;
+    border-style: dashed;
+}
+
 /* Header region */
-
 .header-content {
-
+width: 100%;
+height: 150px;
+background-color: #b50e0e;
+border-style: none;
 }
 
 .name {
-
+    margin: 0px;
+    font-size: 3em;
+    color: #b50e0e;
+    background-color: #f0ca00;
+    float: left;
 }
 
 .subtitle {
-
+font-size: 2em;
+clear: both;
+color: #b50e0e;
+background-color: #f0ca00;
+float: right;
 }
 
 .nav-links {
+font-size: 2em;
+color: white;
+list-style: none;
+display: flex;
+flex-direction: row;
+float: right;
+}
 
+.nav-links li {
+padding: 5px 10px;
 }
 
 /*  Main content region */
 
 .main-content {
-
+margin: 20px;
 }
 
 .section-header {
 
 }
 
-.portfolio-item {
+/* Based on Stack overflow solution https://stackoverflow.com/questions/26967890/css-set-background-image-by-data-image-attr */
 
-}
+div[style^='background-image'] {
+    width: 400px;
+    height: 225px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image is not set here... */
+  }
+  
 
 .portfolio-item-name {
 
+}
+
+.portfolio-tools {
+    
 }
 
 .contact-links {
@@ -39,6 +78,9 @@
 }
 
 .footer-content {
-    
+    width: 100%;
+    height: 40px;
+    color: #b50e0e;
+    background-color: #f0ca00;
 }
 
