@@ -123,6 +123,9 @@ div[style^='background-image'] {
 .portfolio-item {
     margin-bottom: 20px;
 }
+
+/* Style portfolio item name and hover */
+
 .portfolio-item-name {
     background-color: var(--gold);
     color: var(--red);
@@ -143,11 +146,15 @@ div[style^='background-image'] {
     text-decoration: none;
 }
 
+/* Tammi, fix the subtitle styling here at a later point */
 .portfolio-tools {
-    
+    display: none;
 }
 
+/* Style the contact links with hover color change and underlining */
+
 .contact-links {
+    clear: right; /* correct issue whereby links moved on page*/
     float: inline-start;
     text-align: left;
     font-size: 2em;
@@ -174,7 +181,7 @@ div[style^='background-image'] {
     text-align: center;
     width: 100%;
     height: 40px;
+    padding: 10px 0;
     color: var(--gold);
     background-color: var(--red);
 }
-
