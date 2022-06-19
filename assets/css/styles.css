@@ -26,7 +26,7 @@ body {
     border-style: none;
 }
 
-/* Solve nav alignment using https://www.w3schools.com/howto/howto_css_topnav_right.asp */
+/* Solved nav alignment using https://www.w3schools.com/howto/howto_css_topnav_right.asp */
 
 nav {
     background-color: var(--red);
@@ -67,6 +67,7 @@ nav {
 
 .nav-links a {
     text-decoration: none;
+    text-underline-offset: 1rem;
     color: var(--gold);
 }
 
@@ -78,17 +79,41 @@ a:hover {
 /*  Main content region */
 
 .main-content {
-    margin: 20px;
-}
+    margin: 40px;
+    display:block; /* display:block plus overflow:auto makes sure that all the content is displayed */
+    overflow: auto;
+    }
+
+.about {
+    /* I can't seem to affect the margin here. Why? */
+    float: right;
+    width: 80%;
+    margin-bottom: 40px;
+    }
 
 .section-header {
+    color: var(--red);
+    padding-right: 20px;
+    border-right: 3px solid var(--gold);
+    line-height: 100%;
+    width: 125px;
+    height: 100px;
+    text-align: right;
+    float: left;
+    clear: both;
+}
 
+.work {
+    float: right;
+    width: 80%;
 }
 
 /* Based on Stack overflow solution https://stackoverflow.com/questions/26967890/css-set-background-image-by-data-image-attr */
 
 div[style^='background-image'] {
-    width: 400px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     height: 225px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -96,15 +121,26 @@ div[style^='background-image'] {
   }
   
 .portfolio-item {
-
+    margin-bottom: 20px;
 }
 .portfolio-item-name {
     background-color: var(--gold);
     color: var(--red);
     width: fit-content;
+    height: fit-content;
     position: relative;
     margin-bottom: 20px;
     padding: 10px;
+}
+
+.portfolio-item-name a {
+    color: var(--red);
+    text-decoration: none;
+}
+
+.portfolio-item-name a:hover {
+    color: var(--black);
+    text-decoration: none;
 }
 
 .portfolio-tools {
@@ -112,13 +148,33 @@ div[style^='background-image'] {
 }
 
 .contact-links {
+    float: inline-start;
+    text-align: left;
+    font-size: 2em;
+    color: var(--red);
+    list-style: none;
+}
 
+.contact-links li {
+    display: inline-block;
+    margin: 0 20px;
+    padding: 5px 5px;
+}
+.contact-links a {
+    color: var(--red);
+    text-decoration: none;
+}
+.contact-links a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-underline-offset: 1rem;
 }
 
 .footer-content {
+    text-align: center;
     width: 100%;
     height: 40px;
-    color: var(--red);
-    background-color: var(--gold);
+    color: var(--gold);
+    background-color: var(--red);
 }
 
