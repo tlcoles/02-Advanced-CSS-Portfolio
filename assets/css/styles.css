@@ -185,3 +185,53 @@ div[style^='background-image'] {
     color: var(--gold);
     background-color: var(--red);
 }
+
+/* Style for mobile phones */
+@media screen and (max-width: 959px) {
+    .body {
+        width: 100%;
+    }
+
+    .header-content {
+        width: 100vw;
+        height: 50px;
+    }
+
+    .name {
+        margin: 5px 0 5px 0;
+        padding: 0 5px;
+        font-size: 1.5em;
+    }
+
+    .nav-links {
+        font-size: 1em;
+        list-style: none;
+        float: left;
+    
+    }
+
+    .nav-links li {
+        display: inline-block;
+        margin: 0 5px;
+        padding: 2px 2px;
+    }
+
+    .nav-links a {
+        text-underline-offset: .5rem;
+    }
+
+    .subtitle {
+        /* clear: both;
+        float: right; */
+        padding: 0 10px;
+        margin-bottom: -20px;
+        font-size: 1em;
+    }
+
+
+
+
+
+
+
+}
