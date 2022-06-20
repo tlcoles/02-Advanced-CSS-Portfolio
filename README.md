@@ -24,4 +24,3 @@ Tammi L. Coles
 Project link: https://github.com/tlcoles/02-Advanced-CSS-Portfolio  
 Working copy: https://tlcoles.github.io/02-Advanced-CSS-Portfolio/  
 
-## Cont
