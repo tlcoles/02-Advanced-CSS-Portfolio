@@ -11,8 +11,8 @@
 /* Set minium width for desktop view */
 @media screen and (min-width: 960px) {
     body {
-        width: 960px;
-        margin: auto;
+        /* width: 960px;
+        margin: auto; */
         color: black;
         background-color: var(--light-gray);
         border: var(--red);
@@ -89,7 +89,7 @@
     .about {
         float: right;
         width: 80%;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         }
     
     #avatar {
@@ -113,6 +113,10 @@
     .work {
         float: right;
         width: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 4 1 100%;
     }
 
     /* Based on Stack overflow solution https://stackoverflow.com/questions/26967890/css-set-background-image-by-data-image-attr */
@@ -120,16 +124,19 @@
     div[style^='background-image'] {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 22%;
         height: 225px;
+        margin: 20px 10px 20px 0;
         background-repeat: no-repeat;
         background-size: cover;
         /* background-image is not set here... */
     }
     
-    .portfolio-item {
-        margin-bottom: 20px;
+    #portfolio-item-1 {
+        margin-bottom: 10px;
+        width: 100%; /* assignment requirement for width of first item */
     }
+
 
     /* Style portfolio item name and hover */
 
@@ -160,9 +167,11 @@
 
     /* Style the contact links with hover color change and underlining */
 
+    .contact {
+        float: left;
+    }
+
     .contact-links {
-        clear: right; /* correct issue whereby links moved on page*/
-        text-align: left;
         font-size: 2em;
         color: var(--red);
         list-style: none;
@@ -222,7 +231,7 @@
         float: left;
     }
 
-    .subtitle {
+    /* .subtitle {
         clear: both;
         float: left; 
         padding: 0 10px;
@@ -230,7 +239,7 @@
         font-size: 1em;
         color: var(--red);
         background-color: var(--gold);
-    }
+    } */
 
     #avatar {
         position: relative;
@@ -274,14 +283,17 @@
         height: 2rem;
     }
 
+    .portfolio-item  {
+        margin-bottom: 5px;
+    }
+
     .portfolio-item-name {
         background-color: var(--gold);
         color: var(--red);
         width: fit-content;
         /* height: fit-content; */
         position: relative;
-        margin-bottom: 20px;
-        padding: 10px;
+        padding: 5px;
     }
 
     .portfolio-item-name a {
