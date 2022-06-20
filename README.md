@@ -13,6 +13,7 @@ Homework assignment of the ESMT Coding Bootcamp Challenge to create a responsive
 * Test and correct styles for responsive layout
 * Update content and images with real content
 * Correct errors in CSS flex display (column, row, and wrap issues)
+* Submitted 20 June 2022
 
 ## Special challenges for further study
 * Flexbox grow, shrink, and basis
