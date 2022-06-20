@@ -1,2 +1,4 @@
 # 02-Advanced-CSS-Portfolio
-ESMT Coding Bootcamp Challenge – create a portfolio page with HTML and CSS
+Homework assignment of the ESMT Coding Bootcamp Challenge to create a responsive portfolio page with HTML and CSS
+
+Screenshot
