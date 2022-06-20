@@ -160,7 +160,8 @@
         text-decoration: none;
     }
 
-    /* Tammi, fix the subtitle styling here at a later point */
+    /* Tammi, fix the tools styling here at a later point */
+
     .portfolio-tools {
         display: none;
     }
@@ -231,15 +232,15 @@
         float: left;
     }
 
-    /* .subtitle {
+    .subtitle {
         clear: both;
-        float: left; 
+        float: right; 
         padding: 0 10px;
         margin-bottom: 40px;
         font-size: 1em;
         color: var(--red);
         background-color: var(--gold);
-    } */
+    }
 
     #avatar {
         position: relative;
@@ -269,10 +270,6 @@
         text-decoration: underline;
         text-underline-offset: .5rem;
         text-decoration-color: var(--gold);
-    }
-
-    .subtitle {
-        display: none;
     }
 
     .section-header {
